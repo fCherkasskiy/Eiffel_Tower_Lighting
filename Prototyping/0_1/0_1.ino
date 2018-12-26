@@ -45,13 +45,15 @@ void tracer(bool bounce){ // One LED on at a time, going down the whole strip
   }
 }
 
-
+byte x = 0;
 bool checkOn(int i1){
-  for (int x = 0; x < (sizeof(blacklist)/sizeof(int)); x++) {
-        if (i1 == blacklist[x]){
-          Serial.println(i1);
-          return 0;
-        }
-        return 1;
-    } 
+  for (x = 0; x < 10; x++) {
+    Serial.println("FOR LOOP");
+    Serial.println(x);
+    if (i1 == blacklist[x]){
+      Serial.println(i1);
+      return 0;
+    }
+    return 1;
+  } 
 }

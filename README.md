@@ -1,4 +1,4 @@
-# Eiffel_Tower_Lighting
+# Eiffel Tower Lighting
 ### This is a project to add interesting and fun lighting to an Eiffel Tower model about 4ft (1.2m) tall using a WS2812B LED strip and controlling it with an Arduino.
 
 - Materials used for prototyping

@@ -1,5 +1,4 @@
 #include <FastLED.h>
-
 #define LED_PIN 5
 #define NUM_LEDS 300
 
@@ -11,8 +10,8 @@ byte del = 20;
 void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   for(int i = 0; i <= NUM_LEDS; i ++){
-  power[i] = 1;
-}
+    power[i] = 1;
+  }
   for(int i = 50; i <= 100; i ++){
     power[i] = 0;
   }

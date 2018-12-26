@@ -21,7 +21,7 @@ void setup() {
 }
 
 void loop() {
-  tracer(0);
+  tracer(1);
 }
 
 void tracer(bool bounce){ // One LED on at a time, going down the whole strip

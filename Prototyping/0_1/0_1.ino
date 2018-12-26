@@ -3,8 +3,9 @@
 #define NUM_LEDS 300
 
 CRGB leds[NUM_LEDS];
+int blacklist[] = {5, 6, 7, 8, 9, 10, 11, 56, 89, 45, 280};
 
-byte del = 20;
+int del = 40;
 
 void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
@@ -18,11 +19,8 @@ void loop() {
 void tracer(bool bounce){ // One LED on at a time, going down the whole strip
   if(bounce == 0){ // one time and then restarts
     for(int i = 0; i < NUM_LEDS; i++){
-      byte r = byte(random(256));
-      byte g = byte(random(256));
-      byte b = byte(random(256));
-      Serial.print(r);      Serial.print("   ");      Serial.print(g);      Serial.print("   ");      Serial.print(b);    Serial.println("");
-      leds[i] = CRGB(r, g, b);
+      Serial.println(checkOn(i));
+      leds[i] = CRGB(255, 255, 255);
       FastLED.show();
       delay(del);
       leds[i] = CRGB(0, 0, 0);
@@ -45,4 +43,13 @@ void tracer(bool bounce){ // One LED on at a time, going down the whole strip
       FastLED.show();
     }
   }
+}
+
+
+bool checkOn(int i1){
+  for (int x = 0; x < (sizeof(blacklist)/sizeof(int)); x++) {
+        if (i1 == blacklist[x]){
+          return 0;
+        }
+    } 
 }

@@ -15,9 +15,9 @@ void setup() {
   for(int i = 0; i <= NUM_LEDS; i ++){
   power[i] = 1;
 }
-for(int i = 50; i <= 100; i ++){
-  power[i] = 0;
-}
+  for(int i = 50; i <= 100; i ++){
+    power[i] = 0;
+  }
 }
 
 void loop() {

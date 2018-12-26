@@ -5,7 +5,7 @@
 CRGB leds[NUM_LEDS];
 int blacklist[] = {5, 6, 7, 8, 9, 10, 11, 56, 89, 45, 280};
 
-int del = 40;
+int del = 500;
 
 void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
@@ -49,7 +49,9 @@ void tracer(bool bounce){ // One LED on at a time, going down the whole strip
 bool checkOn(int i1){
   for (int x = 0; x < (sizeof(blacklist)/sizeof(int)); x++) {
         if (i1 == blacklist[x]){
+          Serial.println(i1);
           return 0;
         }
+        return 1;
     } 
 }

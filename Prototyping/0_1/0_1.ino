@@ -8,8 +8,6 @@ bool power[NUM_LEDS];
 
 byte del = 20;
 
-
-
 void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   for(int i = 0; i <= NUM_LEDS; i ++){

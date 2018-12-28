@@ -11,10 +11,10 @@
 #### To do list
   - Prebuild
     - [x] Make the lights bounce back and forth or one way
-    - [ ] Be able to skip certain lights
+    - [ ] Be able to skip certain lights, (blacklist)
     - [ ] Allow user to change while the code is running
+    - [ ] Fit the strip onto the tower
     - [ ] More animations
   - Actual Build
-    - [ ] Organize which LEDS will be turned on and off
-    - [ ] Mount
-    - [ ] Android Bluetooth application to change the Lighting (will be expanded upon in the future)
+    - [ ] Mount permanently
+    - [ ] Android Bluetooth application to change the Lighting

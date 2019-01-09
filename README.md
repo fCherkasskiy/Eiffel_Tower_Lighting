@@ -13,7 +13,7 @@
     - [x] Make the lights bounce back and forth or one way
     - [ ] Be able to skip certain lights, (blacklist)
     - [ ] Allow user to change while the code is running
-    - [ ] Fit the strip onto the tower
+    - [x] Fit the strip onto the tower
     - [ ] More animations
   - Actual Build
     - [ ] Mount permanently

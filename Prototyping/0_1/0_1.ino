@@ -29,6 +29,7 @@ void tracer(bool bounce){ // One LED on at a time, going down the whole strip
   }
   else{ // goes back and forth
     for(int i = 0; i < NUM_LEDS; i++){
+      checkOn(i);
       leds[i] = CRGB(255, 255, 255);
       FastLED.show();
       delay(del);

@@ -11,7 +11,7 @@
 #### To do list
   - Prebuild
     - [x] Make the lights bounce back and forth or one way
-    - [ ] Be able to skip certain lights, (blacklist)
+    - [ ] Be able to skip certain lights, (blacklist) **This is our top priority as of now**
     - [ ] Allow user to change while the code is running
     - [x] Fit the strip onto the tower
     - [ ] More animations
